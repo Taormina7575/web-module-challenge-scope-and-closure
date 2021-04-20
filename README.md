@@ -42,13 +42,12 @@ Find the file `index.js` and complete the tasks.
 
 Edit the `ReadMe` file with your answers.
 
-1. In your own words, define closure (1-2 sentences).
+1. In your own words, define closure (1-2 sentences). Closure is when a function must reach outside of itself in scope in order to find something.
 2. Study the following code, then answer the questions below.
 
 ```js
 function personalDice(name){
   return function(){
-      // generate random number between 1 and 6
     const newRoll = Math.floor(Math.random() * 6);
     console.log(`${name} rolled a ${newRoll}`)
   }
@@ -63,9 +62,9 @@ dansRoll();
 dansRoll();
 ```
 
-a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+a. Where is closure used in this code? How can you tell? The closure occurs when the inner function must pull name from the outer function.
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change? The name will always be the same while the number of his roll could change.
+c. What is the lexical scope of `newRoll`? The lexical scope of newRoll is within the inner function.
 
 
 ### Task 3 - Stretch Goals
